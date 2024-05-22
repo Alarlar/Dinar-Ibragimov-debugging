@@ -74,7 +74,7 @@ function setup() { // function keyword was misspelled
   console.log(`target number: ${targetNumber}`);
 
   // Reset number of attempts
-  maxNumberOfAttempts = 0;
+  maxNumberOfAttempts = 5; // variabile shoud reset to five
 
   // Enable the input and submit button
   submitButton.disabeld = false;
