@@ -63,12 +63,12 @@ function checkGuess() {
 }
 
 function hideAllMessages() {
-  for (let elementIndex = 0; elementIndex <= messages.length; elementIndex++) {
+  for (let elementIndex = 0; elementIndex < messages.length; elementIndex++) { // fixed indexing sequence
     messages[elementIndex].style.display = 'none';
   }
 }
 
-function setup() { // function keyword was mispeld 
+function setup() { // function keyword was misspelled 
   // Get random number
   targetNumber = getRandomNumber(1, 100);
   console.log(`target number: ${targetNumber}`);
