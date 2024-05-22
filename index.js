@@ -52,7 +52,7 @@ function checkGuess() {
     numberOfGuessesMessage.innerHTML = `You guessed ${guess}. <br> ${remainingAttempts} guesses remaining`;
   }
 
-  if (attempts ==== maxNumberOfAttempts) {
+  if (attempts === maxNumberOfAttempts) { // removed extra '='
     submitButton.disabled = true;
     guessInput.disabled = true;
   }
