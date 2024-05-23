@@ -74,8 +74,8 @@ function setup() { // function keyword was misspelled
   console.log(`target number: ${targetNumber}`);
 
   // Reset number of attempts
-  maxNumberOfAttempts = 5; // variabile shoud reset to five
-
+  //maxNumberOfAttempts = 5; // variabile should reset to five
+  attempts = 0; // Attempts variable should be reset to 0 when the game is reset
   // Enable the input and submit button
   submitButton.disabled = false; // Fixed spelling of the 'disabled' 
   guessInput.disabled = false; 
