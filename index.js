@@ -43,7 +43,7 @@ function checkGuess() {
     if (guess < targetNumber) {
       tooLowMessage.style.display = '';
     } else {
-      tooHighMessage.style.display = '';
+      tooHighMessage.style.display = ''; // changed tooLowMessage to 'toHighMessage'
     }
 
     const remainingAttempts = maxNumberOfAttempts - attempts;
@@ -77,8 +77,8 @@ function setup() { // function keyword was misspelled
   maxNumberOfAttempts = 5; // variabile shoud reset to five
 
   // Enable the input and submit button
-  submitButton.disabeld = false;
-  guessInput.disabled = false;
+  submitButton.disabled = false; // Fixed spelling of the 'disabled' 
+  guessInput.disabled = false; 
 
   hideAllMessages();
   resetButton.style.display = 'none';
