@@ -33,7 +33,7 @@ function checkGuess() {
   // Get value from guess input element
   const guess = parseInt(guessInput.value, 10); // Converting to integer
 
-  // Checking if guess is with valid range
+//Checking if guess is with valid range
   if (guess < 1 || guess > 99 || isNaN(guess)) {
     errorMessage.style.display = '';
     errorMessage.innerHTML = 'Please enter a number between 1 and 99';
